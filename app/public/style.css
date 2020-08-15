@@ -1,0 +1,163 @@
+div{
+    border-style: solid;
+    border-color: transparent;
+    border-width: solid;
+    position: relative;
+    
+    
+}
+
+body{
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 15pt;
+    color: skyblue;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+
+h1 span {
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px
+}    
+
+form {
+    text-align: center;
+    margin-top: 0;
+}
+
+#firstheader{
+    text-align: center;
+}
+h5{
+    color: coral;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: small;
+    text-align: center;
+
+}
+
+progress{
+    text-align: center;
+}
+
+.float{
+    
+    float: left;
+}
+.box{
+    
+    height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 250px;
+
+}
+
+iframe, audio {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #3fb6b2;
+}
+
+hr {
+    border: 0;
+    height: 21px;
+    background: #3fb6b2;
+}
+
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #a07843;
+}
+textarea {
+    height: 100px;
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+   
+}
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
+
+
+
+.design{
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px
+}
+
+p{
+    text-indent: 20px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    
+   
+   
+    
+}
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: red;
+}
+
+
