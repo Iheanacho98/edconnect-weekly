@@ -4,23 +4,44 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
+     <link rel ="stylesheet" href="style.css">
+
+     <style>
+         section{
+             margin-left: 35%;
+         }
+
+         input, select{
+             color: darkgrey;
+             width: 300px ;
+         }
+         textarea{
+             color: darkgrey;
+             width: 300px ;
+             height: 150px;
+           }
+     </style>
     </head>
     
     <body>
         <header>
-            <div>
-                <h1 style="text-align:center;" >Project Explorer </h1>   
-                <h2 style="text-align: center;"> One Stop Database for Final Year Projects</h2>
-                
-            </div>
-             
-            <nav style="text-align:center;">
-               <a href="index.html">Home</a>
-               <a href="viewproject.html">Project</a>
-               <a href="login.html">Login</a>
-               <a href="register.html">Register</a>
-            </nav>
+            <nav>
+                <a href="index.html" class="header">Project Explorer</a>
+                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term"/>
+                <input type="submit" value="Search" class="submit" />
+              
+                <a href="search.html">Project</a>
+                <a href="createproject.html">Submit</a>
 
+               <div class="right-justified">
+
+                <a href="profile.html" >Signed in as: <b>Iheanacho Chiagozie</b></a>
+                <a href="login.html" >Logout</a>
+
+               </div>
+               
+               
+            </nav>
 
       </header>
 
@@ -30,10 +51,10 @@
 
         <form  >
             <div>
-                <h2>Submit Project</h2>
+                <h2  style="color:rgb(15, 109, 204) ;">Submit Project</h2>
                 
                 <label for="projecttitle"><b>Project Title:</b></label><br>
-                <input type="text"  name="projecttitle" ><br>
+                <input type="text"  name="projecttitle" value="Enter Project Title" ><br>
                 <br>
                
     
@@ -43,7 +64,7 @@
                
             
                 <label for="author"><b>Author:</b></label><br>
-                <input type="text" name="author" ><br>
+                <input type="text" name="author" value="Enter author names(seperated by commas)"><br>
                 <br>
                
     
@@ -66,7 +87,7 @@
                 <input type="file" name="file"><br>
                 <br>
     
-                <button type="submit">Upload</button><br>
+                <button type="submit" class="get-started2">Upload</button><br>
                 <br>
           </div>   
             
@@ -75,9 +96,9 @@
         </section>
 
         <footer>
-            <div>
-                <h6 style="text-align:right;"><font color = "red"> &copy; 2020 Project Explorer. All rights reserved.</font></h6>
-           </div>
+           
+            <p> &copy; 2020 Project Explorer. All rights reserved.</p>
+       
         </footer>
 
     </body>

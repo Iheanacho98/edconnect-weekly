@@ -4,108 +4,147 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
+     <link rel ="stylesheet" href="style.css">
+
+     <style>
+          form{
+             margin-left: 70px;
+         }
+        
+
+     </style>
     </head>
     
     <body>
         <header>
-            <div>
-                <h1 style="text-align:center;" >Project Explorer </h1>   
-                <h2 style="text-align: center;"> One Stop Database for Final Year Projects</h2>
-                
-            </div>
-             
-            <nav style="text-align:center;">
-               <a href="index.html">Home</a>
-               <a href="viewproject.html">Project</a>
-               <a href="login.html">Login</a>
-               <a href="register.html">Register</a>
+            <nav>
+                <a href="index.html" class="header">Project Explorer</a>
+                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term"/>
+                <input type="submit" value="Search" class="submit" />
+              
+                <a href="search.html">Project</a>
+                <a href="createproject.html">Submit</a>
+
+               <div class="right-justified">
+
+                <a href="profile.html" >Signed in as: <b>Iheanacho Chiagozie</b></a>
+                <a href="login.html" >Logout</a>
+
+               </div>
+               
+               
             </nav>
       </header>
 
-      <section>
-        <h2>Iheanacho Chiagozie</h2>
+         <div class="profile-info">
+         <b class="profile-name">Iheanacho Chiagozie</b><span style="color:#0804047c ;"> chigozieanointed@gmail.com</span>
+         </div>
 
-        <div>
+         <div class="profile-info2" >
+                <div class=" profile-info2-congtainer">Department<br> Computer Science</div>
+                <div class=" profile-info2-congtainer">Matriculation Number<br> 17/2250</div>
+               <div class=" profile-info2-congtainer">Course<br> Computer Information Science</div> 
+               <div class=" profile-info2-congtainer">Graduation Year<br> 2019</div> 
             
-            <ul>
-                <li>Email Address:chigozieanointed@gmail.com</li>
-                <li>Matriculation Year: 2017</li>
-                <li>Programme: Computer Science</li>
-                <li>Graduation Year: 2019</li>
-            </ul>
-      </section>
+         </div>
+         
+         <form>
 
-      <form  >
-        <div>
-            <h2>Update Profile</h2>
+             <h3>Update Profile</h3>
+             <hr>
+
+             
+                <div class="overall-form-container">
+                    <div class="first-form-container">
+                        <label for="firstname"><b>Firstname</b></label><br>
+                        <input type="text" placeholder="Input Your Name" name="firstname" required><br>
+                        <br>
+                       
             
-            <label for="firstname"><b>Firstname</b></label>
-            <input type="text" placeholder="Input Your Name" name="firstname" required><br>
-            <br>
-           
+                        <label for="lname"><b>Lastname</b></label><br>
+                        <input type="text" placeholder="Input Your Name" name="lname" required><br>
+                        <br>
+                       
+                    
+                        <label for="email"><b>Email</b></label><br>
+                        <input type="email" placeholder="Enter Email" name="email" required><br>
+                        <br>
+                    </div>
 
-            <label for="lname"><b>Lastname</b></label>
-            <input type="text" placeholder="Input Your Name" name="lname" required><br>
-            <br>
-           
+                    <div class="first-form-container"> 
+                        <label for="matnum"><b>Matric Number</b></label><br>
+                        <input type="text" placeholder="Input Your Matric Number" name="matnum" required><br>
+                        <br>
+                        
+            
+                        <label for="programme"><b>Programme</b></label><br>
+                        <select name="programme">
+                            <option value="1">Computer Science</option>
+                            <option value="2">Computer Information Science</option>
+                            <option value="3">Computer Technology</option>
+                            <option value="4">Software Engineering</option>
+                            <option value="5">Information Technology</option>
+                        </select><br>
+                        <br>
+            
+                        <label for="grad year"><b>Year Of Graduation </b></label><br>
+                        <input type="date" name="programme">
+                        
+                    </div>
+                   
+                   
         
-            <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Enter Email" name="email" required><br>
-            <br>
-           
+                   
+                </div>
 
-            <label for="matnum"><b>Matric Number</b></label>
-            <input type="text" placeholder="Input Your Matric Number" name="matnum" required><br>
-            <br>
-            
-
-            <label for="programme"><b>Programme</b></label>
-            <select name="programme">
-                <option value="1">Computer Science</option>
-                <option value="2">Computer Information Science</option>
-                <option value="3">Computer Technology</option>
-                <option value="4">Software Engineering</option>
-                <option value="5">Information Technology</option>
-            </select><br>
-            <br>
-
-            <label for="grad year"><b>Year Of Graduation </b></label>
-            <input type="date" name="programme"><br>
-            <br>
-
-            <button type="submit">Submit</button><br>
-            <br>
-        
-            <div>
-
-                <h2>Change Password</h2>
- 
-                <label for="psw"><b>Current Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required><br>
-                <br>
+                <div class="buttons">
+                    <button type="submit" class="get-started2">Submit</button><br>
+                    <br>
+                </div>
                 
-                <label for="psw"><b>New Password</b></label>
-                <input type="password" placeholder="Enter New Password" name="psw" required><br>
-                <br>
-
-                <label for="psw"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Confirm Password" name="psw" required><br>
-                <br>
-
-                <button type="submit">Submit </button>
-            </div>
-      
-      </form>
-  </section>
-
-  <br>
-
-    <footer>
-        <div>
-            <h6 style="text-align:right;"><font color = "red"> &copy; 2020 Project Explorer. All rights reserved.</font></h6>
-       </div>
-    </footer>
-
     
+               
+             
+                
+                <h3>Change Password</h3>
+                <hr>
+                
+                <div class="overall-form-container2">
+
+                    <div class="first-form-container2">
+                        <label for="psw"><b>Current Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required><br>
+                        <br>
+                    </div>
+
+                    <div class="first-form-container2">
+                        <label for="psw"><b>New Password</b></label>
+                        <input type="password" placeholder="Enter New Password" name="psw" required><br>
+                        <br>
+                    </div>
+
+                    <div class="first-form-container2"> 
+                        <label for="psw"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Confirm Password" name="psw" required>
+                        
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="get-started2">Submit </button>
+                </div>
+         </form>
+         
+       
+     </section>
+
+     <br>
+
+      <footer>
+           
+            <p> &copy; 2020 Project Explorer. All rights reserved.</p>
+
+      </footer>
     </body>
 </html>    

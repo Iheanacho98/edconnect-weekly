@@ -4,21 +4,81 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
+     <link rel ="stylesheet" href="style.css">
+     <style>
+
+         .profile-info2{
+
+            padding: 20px;
+
+         }
+         .profile-info2-congtainer3{
+            margin-right: 10px;
+            
+          }
+
+          form, h2{
+              margin-left: 70px;
+          }
+          .overall-container{
+              height: 350px;
+              padding-left: 10px;
+              background-color: white;
+          }
+
+          .sub-container{
+              width: 50%;
+              height: 400px;
+              margin-left: 10px;
+              margin-right: 10px;
+          }
+
+          input, select{
+             color: darkgrey;
+             width: 300px ;
+         }
+         textarea{
+             color: darkgrey;
+             width: 300px ;
+             height: 100px;
+           }
+
+           .search-bar1{
+               width: 300px;
+               padding: 5px;
+               background-color:rgb(15, 109, 204) ;";
+           }
+           
+         .search-bar3{
+               width: 295px;
+              padding: 5px;
+              text-align: center;
+           }
+
+          hr{
+              margin-left: 0px;
+          }
+     </style>
     </head>
     
     <body>
         <header>
-            <div>
-                <h1 style="text-align:center;" >Project Explorer </h1>   
-                <h2 style="text-align: center;"> One Stop Database for Final Year Projects</h2>
-                
-            </div>
-             
-            <nav style="text-align:center;">
-               <a href="index.html">Home</a>
-               <a href="viewproject.html">Project</a>
-               <a href="login.html">Login</a>
-               <a href="register.html">Register</a>
+            <nav>
+                <a href="index.html" class="header">Project Explorer</a>
+                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term"/>
+                <input type="submit" value="Search" class="submit" />
+              
+                <a href="search.html">Project</a>
+                <a href="createproject.html">Submit</a>
+
+               <div class="right-justified">
+
+                <a href="profile.html" >Signed in as: <b>Ekundayo Michael</b></a>
+                <a href="login.html" >Logout</a>
+
+               </div>
+               
+               
             </nav>
 
 
@@ -26,56 +86,87 @@
 
         <section>
 
+            <h2 style="color:rgb(15, 109, 204) ;">Project Five</h2>
+
+            <div class="profile-info2">
+               
+   
+               
+                   <div class=" profile-info2-congtainer">Craeted By<br> Ekundayo Michael</div>
+                   <div class=" profile-info2-congtainer">Date Craeted<br> 12/06/2020</div>
+                   <div class=" profile-info2-congtainer">Last Updated<br> 23/08/2020</div>
+                    
+                       <div class=" profile-info2-congtainer3">
+                      <a href="viewproject.html"><input type="submit" value="View project" class="view-button" /></a> 
+       
+                        </div>
+                   
+               
+            </div>   
+
         <form >
+           
 
-         <div>
-            <h2>Project Five</h2>
 
-            <ul>
-                <li>Craeted By: Ekundayo Michael</li>
-                <li>Date Craeted: 12/06/2020</li>
-                <li>Last Updated: 23/08/2020</li>
+          <div class="overall-container">
+              <div class="sub-container">
+                   <h3 style="color:rgb(15, 109, 204) ;">Edit Project</h3>
+                    <hr>
+                    <br>
+              
+                 <label for="projecttitle"><b>Project Title:</b></label><br>
+                  <input type="text"  name="projecttitle"  value="Project 5"><br>
+                  <br>
+             
+  
+                    <label for="projectabstract"><b>Project Abstract:</b></label><br>
+                    <textarea   >kdkfgkffkkfkdskddlfclvlvc vc,,vcl,vcvc,lcvl,cvl,cvl,l</textarea><br>
+                 <br>
+             
+          
+                 <label for="author"><b>Author:</b></label><br>
+                 <input type="text" name="author" value="Ekundayo Michael"><br>
+                    <br>
+             
+  
+              
+  
+                 <label for="programme"><b>Department:</b></label><br>
+                 <select name="programme">
+                  <option value="1">Computer Science</option>
+                  <option value="2">Computer Information Science</option>
+                  <option value="3">Computer Technology</option>
+                  <option value="4">Software Engineering</option>
+                  <option value="5">Information Technology</option>
+                 </select><br>
+                 <br>
+
+                 <button type="submit" class="get-started2">Save</button><br>
+                 <br>
+             </div>
+
+             <div class="sub-container">
+                    <h3 style="color:rgb(15, 109, 204) ;">Manage Project Files</h3>
+                    <hr>
+                    <br>
+                 <label for="file"><b>Upload Your Project: </b></label><br>
+                    <input type="file" name="file" value="Browse"><br>
+                    <br>
+                    
+                       <div class="file-bar">
                 
-            </ul>
-         </div>   
+                        <div class="search-bar1" >
+                           <b>Project Files</b> 
+                        </div>
+                        <div >
+                            <input type="Text" name="file" value="No file uploaded yet" class="search-bar3"><br>
+                        </div>
+             </div>
+               
 
+             
 
-          <div>
-            <h2>Edit Project</h2>
-            
-            <label for="projecttitle"><b>Project Title:</b></label><br>
-            <input type="text"  name="projecttitle" ><br>
-            <br>
            
-
-            <label for="projectabstract"><b>Project Abstract:</b></label><br>
-            <textarea  ></textarea><br>
-            <br>
-           
-        
-            <label for="author"><b>Author:</b></label><br>
-            <input type="text" name="author" ><br>
-            <br>
-           
-
-            
-
-            <label for="programme"><b>Department:</b></label><br>
-            <select name="programme">
-                <option value="1">Computer Science</option>
-                <option value="2">Computer Information Science</option>
-                <option value="3">Computer Technology</option>
-                <option value="4">Software Engineering</option>
-                <option value="5">Information Technology</option>
-            </select><br>
-            <br>
-
-            <label for="file"><b>Upload Your Project: </b></label><br>
-            <input type="file" name="file"><br>
-            <br>
-
-            <button type="submit">Upload</button><br>
-            <br>
           </div>   
      </form>
         
@@ -83,10 +174,10 @@
         
      </section>
 
-        <footer>
-        <div>
-            <h6 style="text-align:right;"><font color = "red"> &copy; 2020 Project Explorer. All rights reserved.</font></h6>
-       </div>
+     <footer>
+           
+        <p> &copy; 2020 Project Explorer. All rights reserved.</p>
+   
      </footer>
 
  </body>

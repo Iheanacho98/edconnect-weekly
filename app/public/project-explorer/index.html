@@ -4,39 +4,51 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
+     <link rel ="stylesheet" href="style.css">
     </head>
     
     <body>
         <header>
-            <div>
-                <h1 style="text-align:center;" >Project Explorer </h1>   
-                <h2 style="text-align: center;"> One Stop Database for Final Year Projects</h2>
-                
-            </div>
+           
              
-            <nav style="text-align:center;">
-               <a href="index.html">Home</a>
-               <a href="viewproject.html">Project</a>
-               <a href="login.html">Login</a>
-               <a href="register.html">Register</a>
+            <nav>
+                <a href="index.html" class="header">Project Explorer</a>
+                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term" />
+                <input type="submit" value="Search" class="submit" />
+              
+                <a href="search.html">Project</a>
+                <a href="createproject.html">Submit</a>
+
+               <div class="right-justified">
+
+                <a href="register.html" >Sign-Up</a>
+                <a href="login.html" >Login</a>
+
+               </div>
+               
+               
             </nav>
       </header>
 
         
       
-      <section>
+      <div class="main">
              <h2> 
                  
                 Welcome to Project Explorer</h2>
 
              <p>Project Explorer is a repository for all final year project for Babcock University. This is a repository where you can upload, search and download final year project across all department in Babcock University.</p>
             
-        </section>
 
-        <section>
-            <h2>List of Projects</h2>
+             <input type="submit" value="Get Started" class=" get-started" />
+             <input type="submit" value="Login" class="login" />
+      </div>
 
-            <div>
+        <div class="overall-container">
+
+            
+
+            <div class="sub-container">
                 <h3>Project One</h3>
 
                 <ul>
@@ -45,7 +57,11 @@
                     <li>Programme: Computer Information Science</li>
                     <li>Year: 2019</li>
                 </ul>
+            </div>
 
+
+
+            <div class="sub-container">
                 <h3>Project Two</h3>
 
                 <ul>
@@ -55,7 +71,10 @@
                     <li>Year: 2020</li>
                 </ul>
 
+            </div>
 
+
+            <div class="sub-container">
                 <h3>Project Three</h3>
 
                 <ul>
@@ -65,12 +84,26 @@
                     <li>Year: 2019</li>
                 </ul>
             </div>
-        </section>
+
+            <div class="sub-container">
+                <h3>Project Four</h3>
+
+                <ul>
+                    <li>Name: University Currency System </li>
+                    <li>Description: Web Application for the use of virtual currency by students in Babcock University</li>
+                    <li>Programme: Information Technology</li>
+                    <li>Year: 2019</li>
+                </ul>
+            </div>
+
+
+
+        </div>
 
         <footer>
-            <div>
-                <h6 style="text-align:right;"><font color = "red"> &copy; 2020 Project Explorer. All rights reserved.</font></h6>
-           </div>
+           
+                <p> &copy; 2020 Project Explorer. All rights reserved.</p>
+           
         </footer>
 
          

@@ -4,21 +4,35 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
+     <link rel ="stylesheet" href="style.css">
+
+     <style>
+        h2{
+           margin-left: 70px;
+       }
+      
+
+   </style>
     </head>
     
     <body>
         <header>
-            <div>
-                <h1 style="text-align:center;" >Project Explorer </h1>   
-                <h2 style="text-align: center;"> One Stop Database for Final Year Projects</h2>
-                
-            </div>
-             
-            <nav style="text-align:center;">
-               <a href="index.html">Home</a>
-               <a href="viewproject.html">Project</a>
-               <a href="login.html">Login</a>
-               <a href="register.html">Register</a>
+            <nav>
+                <a href="index.html" class="header">Project Explorer</a>
+                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term"/>
+                <input type="submit" value="Search" class="submit" />
+              
+                <a href="search.html">Project</a>
+                <a href="createproject.html">Submit</a>
+
+               <div class="right-justified">
+
+                <a href="profile.html" >Signed in as: <b>Iheanacho Chiagozie</b></a>
+                <a href="login.html" >Logout</a>
+
+               </div>
+               
+               
             </nav>
 
 
@@ -26,74 +40,109 @@
 
         
       
-      <section>
+      
+      
+       
 
-        <form  >
+
+
+        
             <div>
-                <h2>Search Project By</h2>
+                <h2 style="color:rgb(15, 109, 204) ;">Project Gallery</h2>
                 
-                <label for="projecttitle"><b>Project Title</b></label>
-                <input type="text"  name="projecttitle" ><br>
-                <br>
-               
-    
-                <label for="projectabstract"><b>Project Abstract</b></label>
-                <input type="text" name="projectabstract" ><br>
-                <br>
-               
+                <div class="search-container">
+        
+                    <input placeholder="Search Project" value="Search Project Name, Author, Abstract, Tags" type="text" class="search-area2" />
+                    
+                   <div class="search-bar">
             
-                <label for="author"><b>Author</b></label>
-                <input type="text" name="author" ><br>
-                <br>
-               
-    
-                <label for="matnum"><b>Matric Number</b></label>
-                <input type="text"  name="matnum" ><br>
-                <br>
-                
-    
-                <label for="programme"><b>Department</b></label>
-                <select name="programme">
-                    <option value="1">Computer Science</option>
-                    <option value="2">Computer Information Science</option>
-                    <option value="3">Computer Technology</option>
-                    <option value="4">Software Engineering</option>
-                    <option value="5">Information Technology</option>
-                </select><br>
-                <br>
-    
-                <label for="grad year"><b>Year Of Graduation </b></label>
-                <input type="date" name="programme"><br>
-                <br>
-    
-                <button type="submit">Search</button><br>
-                <br>
-          </div>   
+                    <div class="search-bar1" >
+                        Search  by
+                    </div>
+                    <div class="search-bar2">
+                        <select name="programme">
+                            <option value="1">Name</option>
+                            <option value="2">Author</option>
+                            <option value="3">Abstract</option>
+                            <option value="4">Tag</option>
+                        </select>
+                    </div>
+              </div>
+                    <input type="submit" value="Search" class="search-button" />
             
-             
+         </div>
+                   
             
-        </section>
+
 
         <section>
-            <h2>Search Result</h2>
+            <div class="profile-info">
+                <b style="color:rgb(15, 109, 204) ;" class="profile-name">All Projects</b><span style="color:#0804047c ;"> (4 results)</span>
+                </div>
+            <div class="overall-container">
 
-            <div>
-                <h3>Project One</h3>
+            
 
-                <ul>
-                    <li>Name: Hospital Management System</li>
-                    <li>Description: Web Application for the management of data for BUTH</li>
-                    <li>Programme: Computer Information Science</li>
-                    <li>Year: 2019</li>
-                </ul>
-            </div>   
+                <div class="sub-container">
+                    <h3>Project One</h3>
+    
+                    <ul>
+                        <li>Name: Hospital Management System</li>
+                        <li>Description: Web Application for the management of data for BUTH</li>
+                        <li>Programme: Computer Information Science</li>
+                        <li>Year: 2019</li>
+                    </ul>
+                </div>
+    
+    
+    
+                <div class="sub-container">
+                    <h3>Project Two</h3>
+    
+                    <ul>
+                        <li>Name: Computerized Information System for NGO</li>
+                        <li>Description: Mobile Application as an Android Chatbot for human rights organization</li>
+                        <li>Programme: Computer Science</li>
+                        <li>Year: 2020</li>
+                    </ul>
+    
+                </div>
+    
+    
+                <div class="sub-container">
+                    <h3>Project Three</h3>
+    
+                    <ul>
+                        <li>Name: University Currency System </li>
+                        <li>Description: Web Application for the use of virtual currency by students in Babcock University</li>
+                        <li>Programme: Information Technology</li>
+                        <li>Year: 2019</li>
+                    </ul>
+                </div>
+    
+                <div class="sub-container">
+                    <h3>Project Four</h3>
+    
+                    <ul>
+                        <li>Name: University Currency System </li>
+                        <li>Description: Web Application for the use of virtual currency by students in Babcock University</li>
+                        <li>Programme: Information Technology</li>
+                        <li>Year: 2019</li>
+                    </ul>
+                </div>
+    
+    
+    
+            </div>
         </section>
 
+      
         <footer>
-            <div>
-                <h6 style="text-align:right;"><font color = "red"> &copy; 2020 Project Explorer. All rights reserved.</font></h6>
-           </div>
+           
+            <p> &copy; 2020 Project Explorer. All rights reserved.</p>
+       
         </footer>
+
 
     </body>
 </html>       

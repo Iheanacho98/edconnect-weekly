@@ -4,23 +4,79 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
+     <link rel ="stylesheet" href="style.css">
+         <style>
+                .profile-info2{
+
+                padding: 20px;
+
+                }
+                .profile-info2-congtainer3{
+                margin-right: 10px;
+
+             }
+
+             form, h2{
+             margin-left: 70px;
+             }
+                .overall-container{
+             height: 350px;
+                padding-left: 10px;
+             background-color: white;
+             }
+
+                .sub-container{
+                 width: 50%;
+                 height: 400px;
+                 margin-left: 10px;
+                 margin-right: 10px;
+                }
+
+                input, select{
+                color: darkgrey;
+                width: 300px ;
+                }
+                textarea{
+                color: darkgrey;
+                width: 350px ;
+                height: 200px;
+                }
+
+                .search-bar1{
+                width: 300px;
+                padding: 5px;
+                background-color:rgb(15, 109, 204) ;";
+                }
+
+                .search-bar3{
+                width: 295px;
+                padding: 5px;
+                text-align: center;
+                }
+
+
+     </style>
     </head>
     
     <body>
         <header>
-            <div>
-                <h1 style="text-align:center;" >Project Explorer </h1>   
-                <h2 style="text-align: center;"> One Stop Database for Final Year Projects</h2>
-                
-            </div>
-             
-            <nav style="text-align:center;">
-               <a href="index.html">Home</a>
-               <a href="viewproject.html">Project</a>
-               <a href="login.html">Login</a>
-               <a href="register.html">Register</a>
-            </nav>
+            <nav>
+                <a href="index.html" class="header">Project Explorer</a>
+                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term"/>
+                <input type="submit" value="Search" class="submit" />
+              
+                <a href="search.html">Project</a>
+                <a href="createproject.html">Submit</a>
 
+               <div class="right-justified">
+
+                <a href="profile.html" >Signed in as: <b>Ekundayo Michael</b></a>
+                <a href="login.html" >Logout</a>
+
+               </div>
+               
+               
+            </nav>
 
       </header>
 
@@ -29,51 +85,120 @@
          
 
        <div>
-            <h2>Project Five</h2>
+             <h2 style="color:rgb(15, 109, 204) ;">Project Five</h2>
 
-            <a href="editproject.html" style="color:dodgerblue" >Edit Project</a>
+             <div class="profile-info2"> 
+                     <div class=" profile-info2-congtainer">Craeted By<br> Ekundayo Michael</div>
+                     <div class=" profile-info2-congtainer">Date Craeted<br> 12/06/2020</div>
+                     <div class=" profile-info2-congtainer">Last Updated<br> 23/08/2020</div>
+                    
+                       <div class=" profile-info2-congtainer3">
+                         <a href="editproject.html"><input type="submit" value="Edit project" class="view-button" /></a> 
+       
+                        </div>
+                   
+               
+            </div>   
 
-            <ul>
-                <li>Craeted By: Ekundayo Michael</li>
-                <li>Date Craeted: 12/06/2020</li>
-                <li>Last Updated: 23/08/2020</li>
+            <div class="overall-container">
+                <div class="sub-container">
+                     <h3 style="color:rgb(15, 109, 204) ;">Project Abstract</h3>
+
+                      <br>
+
+                      <textarea   >This purpose of the e-learning application is to provide an environment for conducive learning on digital platforms. This study shows effective ways in learning can take place. Learning will be administered through Videos Lectures, Research, Solutions and Activism. Users should be able to learn anything through watching videos. They should also be able to make experiments with lectures and discuss it on forums, and then improve the website by sharing better solutions. Furthermore, users should be able to learn more from other users when the website is shared with them.
+                      </textarea><br>
+                        <br>
                 
-            </ul>
-       </div>   
-
-
-       <div>
-
-        <h2>Project Abstract</h2>
-
-        <p>This purpose of the e-learning application is to provide an environment for conducive learning on digital platforms. This study shows effective ways in learning can take place. Learning will be administered through Videos Lectures, Research, Solutions and Activism. Users should be able to learn anything through watching videos. They should also be able to make experiments with lectures and discuss it on forums, and then improve the website by sharing better solutions. Furthermore, users should be able to learn more from other users when the website is shared with them.
-        </p>
-
-       </div>
-
-       <div>
-        <h2>Project Details</h2>
-
-        <ul>
-            <li>Authors: Ekundayo Michael, Iheanacho Chiagozie</li>
-            <li>Tag(s): #IT, #NGO, #ICT</li>
-            <li>Project Files: <a href="#"  >File 1</a> <a href="#"  >File 2</a></li>
+                     
+    
+                      
+                     
+               
             
-        </ul>
-   </div>   
+                   
+                   
+                   
+                
+    
+                   
+                   
+  
+                    
+                        </div>
+  
+                        <div class="sub-container">
+                      <h3 style="color:rgb(15, 109, 204) ;">Project Details</h3>
+
+                      <div class="search-bar1" >
+                        <b>Author(s)</b> 
+                     </div>
+                     <div >
+                         <input type="Text" name="file" value="Ekundayo Michael" class="search-bar3"><br>
+                         <input type="Text" name="file" value="Iheanacho Chiagozie" class="search-bar3"><br>
+                     </div>
+                     <br>
+                       
+                     <div class="search-bar1"><b>Tag(s) </b>
+
+                     </div>
+
+                     <div>
+                        <input type="Text" name="file" value="#IT, #NGO, #ICT" class="search-bar3"><br>
+                     </div>
+
+                     <br>
+
+                     <div class="search-bar1"><b>Project Files </b> 
+                        </div>
+
+                        <div>
+                            <input type="Text" name="file" value="No file uploaded yet" class="search-bar3"><br>
+                        </div>
+
+                        <br>
+
+                        <button type="submit" class="get-started2">Save</button><br>
+                        <br>
+
+                   
+        
+                      
+                     
+                      
+                         
+                  
+                     </div>
+                 
+  
+               
+  
+             
+                     </div>   
+
+
+        
+
+        
+
+      
+
+       
+         
+                  </div>   
             
             
            
         
          
         
-     </section>
+     
 
-        <footer>
-        <div>
-            <h6 style="text-align:right;"><font color = "red"> &copy; 2020 Project Explorer. All rights reserved.</font></h6>
-       </div>
-     </footer>
+                    <footer>
+           
+                 <p> &copy; 2020 Project Explorer. All rights reserved.</p>
+   
+                     </footer>
 
  </body>
 </html>       
