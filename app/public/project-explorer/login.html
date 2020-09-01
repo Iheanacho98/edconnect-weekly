@@ -4,15 +4,17 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
-     <link rel ="stylesheet" href="style.css">
+     <link rel ="stylesheet" href="bootstrap.min.css">
     </head>
     
     <body>
         <header>
             <nav>
-                <a href="index.html" class="header">Project Explorer</a>
-                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term"/>
-                <input type="submit" value="Search" class="submit" />
+              <a href="index.html" class="header">Project Explorer</a>
+              <form class="form-inline" name="prp">
+                  <input placeholder="Search Project" value="Search Project" type="text" class="form-control" id="search_term" />
+                  <input type="submit" value="Search" class="btn btn-outline-light" />
+              </form>
               
                 <a href="search.html">Project</a>
                 <a href="createproject.html">Submit</a>
@@ -50,16 +52,16 @@
             <br>
             <div>
               <label for="email"><b>Email Address</b></label><br>
-              <input type="email" placeholder="Enter Email Address" name="email" required><br>
+              <input type="email" placeholder="Enter Email Address" name="email" required class="form-control"><br>
 
               <br>
           
               <label for="psw"><b>Password</b></label><br>
-              <input type="password" placeholder="Enter Password" name="psw" required><br>
+              <input type="password" placeholder="Enter Password" name="psw" required class="form-control"><br>
 
               <br>
           
-              <button type="submit" class="login2">Login</button><br>
+              <button type="submit" class="btn btn-primary">Login</button><br>
 
               <br>
 

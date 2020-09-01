@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
-     <link rel ="stylesheet" href="style.css">
+     <link rel ="stylesheet" href="bootstrap.min.css">
     </head>
     
     <body>
@@ -12,9 +12,13 @@
            
              
             <nav>
+               
                 <a href="index.html" class="header">Project Explorer</a>
-                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term" />
-                <input type="submit" value="Search" class="submit" />
+                <form class="form-inline" name="prp">
+                    <input placeholder="Search Project" value="Search Project" type="text" class="form-control" id="search_term" />
+                    <input type="submit" value="Search" class="btn btn-outline-light" />
+                </form>
+                
               
                 <a href="search.html">Project</a>
                 <a href="createproject.html">Submit</a>
@@ -32,7 +36,7 @@
 
         
       
-      <div class="main">
+      <div class="jumbotron">
              <h2> 
                  
                 Welcome to Project Explorer</h2>
@@ -40,8 +44,8 @@
              <p>Project Explorer is a repository for all final year project for Babcock University. This is a repository where you can upload, search and download final year project across all department in Babcock University.</p>
             
 
-             <input type="submit" value="Get Started" class=" get-started" />
-             <input type="submit" value="Login" class="login" />
+             <input type="submit" value="Get Started" class="btn btn-outline-primary" />
+             <input type="submit" value="Login" class="btn btn-outline-secondary" />
       </div>
 
         <div class="overall-container">

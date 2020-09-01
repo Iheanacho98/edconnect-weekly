@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
-     <link rel ="stylesheet" href="style.css">
+     <link rel ="stylesheet" href="bootstrap.min.css">
 
      <style>
          section{
@@ -27,8 +27,10 @@
         <header>
             <nav>
                 <a href="index.html" class="header">Project Explorer</a>
-                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term"/>
-                <input type="submit" value="Search" class="submit" />
+                <form class="form-inline" name="prp">
+                    <input placeholder="Search Project" value="Search Project" type="text" class="form-control" id="search_term" />
+                    <input type="submit" value="Search" class="btn btn-outline-light" />
+                </form>
               
                 <a href="search.html">Project</a>
                 <a href="createproject.html">Submit</a>
@@ -54,27 +56,27 @@
                 <h2  style="color:rgb(15, 109, 204) ;">Submit Project</h2>
                 
                 <label for="projecttitle"><b>Project Title:</b></label><br>
-                <input type="text"  name="projecttitle" value="Enter Project Title" ><br>
+                <input type="text"  name="projecttitle" value="Enter Project Title" class="form-control"><br>
                 <br>
                
     
                 <label for="projectabstract"><b>Project Abstract:</b></label><br>
-                <textarea  ></textarea><br>
+                <textarea class="form-control" ></textarea><br>
                 <br>
                
             
                 <label for="author"><b>Author:</b></label><br>
-                <input type="text" name="author" value="Enter author names(seperated by commas)"><br>
+                <input type="text" name="author" value="Enter author names(seperated by commas)" class="form-contol"><br>
                 <br>
                
     
                 <label for="matnum"><b>Matric Number:</b></label><br>
-                <input type="text"  name="matnum" ><br>
+                <input type="text"  name="matnum" class="form-control" ><br>
                 <br>
                 
     
                 <label for="programme"><b>Department:</b></label><br>
-                <select name="programme">
+                <select name="programme" class="form-control">
                     <option value="1">Computer Science</option>
                     <option value="2">Computer Information Science</option>
                     <option value="3">Computer Technology</option>
@@ -84,10 +86,10 @@
                 <br>
     
                 <label for="file"><b>Upload Your File: </b></label><br>
-                <input type="file" name="file"><br>
+                <input type="file" name="file" class="form-control"><br>
                 <br>
     
-                <button type="submit" class="get-started2">Upload</button><br>
+                <button type="submit" class="btn btn-primary">Upload</button><br>
                 <br>
           </div>   
             

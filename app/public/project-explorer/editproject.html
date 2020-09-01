@@ -4,10 +4,10 @@
      <meta charset="UTF-8">
          <title>Welcome To Project Explorer</title>
      <meta name="viewport" content="width=device-width">
-     <link rel ="stylesheet" href="style.css">
+     <link rel ="stylesheet" href="bootstrap.min.css">
      <style>
 
-         .profile-info2{
+        /* .profile-info2{
 
             padding: 20px;
 
@@ -57,7 +57,7 @@
 
           hr{
               margin-left: 0px;
-          }
+          }*/
      </style>
     </head>
     
@@ -65,8 +65,10 @@
         <header>
             <nav>
                 <a href="index.html" class="header">Project Explorer</a>
-                <input placeholder="Search Project" value="Search Project" type="text" class="search-area" id="search_term"/>
-                <input type="submit" value="Search" class="submit" />
+              <form class="form-inline" name="prp">
+                  <input placeholder="Search Project" value="Search Project" type="text" class="form-control" id="search_term" />
+                  <input type="submit" value="Search" class="btn btn-outline-light" />
+              </form>
               
                 <a href="search.html">Project</a>
                 <a href="createproject.html">Submit</a>
@@ -97,7 +99,7 @@
                    <div class=" profile-info2-congtainer">Last Updated<br> 23/08/2020</div>
                     
                        <div class=" profile-info2-congtainer3">
-                      <a href="viewproject.html"><input type="submit" value="View project" class="view-button" /></a> 
+                      <a href="viewproject.html"><input type="submit" value="View project" class="btn btn-primary" /></a> 
        
                         </div>
                    
@@ -115,24 +117,24 @@
                     <br>
               
                  <label for="projecttitle"><b>Project Title:</b></label><br>
-                  <input type="text"  name="projecttitle"  value="Project 5"><br>
+                  <input type="text"  name="projecttitle"  value="Project 5" class="form-control"><br>
                   <br>
              
   
                     <label for="projectabstract"><b>Project Abstract:</b></label><br>
-                    <textarea   >kdkfgkffkkfkdskddlfclvlvc vc,,vcl,vcvc,lcvl,cvl,cvl,l</textarea><br>
+                    <textarea class="form-control"  >kdkfgkffkkfkdskddlfclvlvc vc,,vcl,vcvc,lcvl,cvl,cvl,l</textarea><br>
                  <br>
              
           
                  <label for="author"><b>Author:</b></label><br>
-                 <input type="text" name="author" value="Ekundayo Michael"><br>
+                 <input type="text" name="author" value="Ekundayo Michael"class="form-control" ><br>
                     <br>
              
   
               
   
                  <label for="programme"><b>Department:</b></label><br>
-                 <select name="programme">
+                 <select name="programme"class="form-control" >
                   <option value="1">Computer Science</option>
                   <option value="2">Computer Information Science</option>
                   <option value="3">Computer Technology</option>
@@ -141,7 +143,7 @@
                  </select><br>
                  <br>
 
-                 <button type="submit" class="get-started2">Save</button><br>
+                 <button type="submit" class="btn btn-primary">Save</button><br>
                  <br>
              </div>
 
@@ -153,13 +155,13 @@
                     <input type="file" name="file" value="Browse"><br>
                     <br>
                     
-                       <div class="file-bar">
+                       <div class="card">
                 
-                        <div class="search-bar1" >
+                        <div class="card-header" >
                            <b>Project Files</b> 
                         </div>
                         <div >
-                            <input type="Text" name="file" value="No file uploaded yet" class="search-bar3"><br>
+                            <input type="Text" name="file" value="No file uploaded yet" class="form-control"><br>
                         </div>
              </div>
                
